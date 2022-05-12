@@ -1,0 +1,10 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 27px;
+}
+@import './formstyles/design';
+@import './formstyles/fill';
+@import './formstyles/share';
