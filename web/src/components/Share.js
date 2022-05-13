@@ -7,7 +7,6 @@ function Share(props) {
   const [result, setResult] = useState("");
 
   const handleCollapsedShare = (ev) => {
-    // Llama a la API
     props.handleClickCreateCard(ev);
   };
 
@@ -32,8 +31,6 @@ function Share(props) {
     }
   };
 
-  // Cada vez que cambie la respuesta de la API
-  // recalculamos si hay o no algun error y lo pintamos
   useEffect(errorCard, [props.apiData]);
 
   return (
