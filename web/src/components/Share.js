@@ -66,13 +66,13 @@ function Share(props) {
         <div className={`js-fourFieldset ${collapsedShare}`}>
           <p className='fourFieldset__link js_url_card'>{result}</p>
           <a
-            href={props.apiData?.cardURL}
+            href={props.apiData.cardURL}
             target='_blank'
             rel='noreferrer'
             title='Haz click para ir a la tarjeta creada'
             className='fourFieldset__link js_url_card'
           >
-            {props.apiData?.cardURL}
+            {props.apiData.cardURL}
           </a>
           <button
             className='fourFieldset__button js-twitterButton'
