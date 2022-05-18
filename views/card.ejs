@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./address-card-solid.svg" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <script src="https://kit.fontawesome.com/b79a8cfd22.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+    <title>Awesome Profile Cards</title>
+    <script defer="defer" src="./static/js/main.f6639829.js"></script>
+    <link rel="stylesheet" href="/main.css" />
+</head>
+
+<body>
+    <div class="card js-preview palette-2">
+        <div class="card__personalInfo personalInfoBorderPalette1 js-borde">
+            <p class="card__personalInfo--name js-personalName personalInfoNamePalette1">
+                <%= name %>
+            </p>
+            <p class="card__personalInfo--job js-cardJob">
+                <%= job %>
+            </p>
+        </div>
+        <div class="card__image " style="background-image: url('<%= photo %>');"></div>
+        <nav class="card__socialInfo">
+            <ul class="card__socialMenu">
+                <li class="card__rrss"><a class="card__rrss--item rrssPalette1 js-border1 js-iconPhone"
+                        href="tel:<%= phone %>" target="_blank" title="phone number" rel="noreferrer"><i
+                            class="icon fas fa-mobile-alt js-icon1" aria-hidden="true"></i></a></li>
+                <li class="card__rrss"><a class="card__rrss--item rrssPalette1 js-border2 js-iconEmail"
+                        href="mailto:<%= email%>" target="_blank" rel="noreferrer" title="email address"><i
+                            class="icon far fa-envelope js-icon2" aria-hidden="true"></i></a></li>
+                <li class="card__rrss"><a class="card__rrss--item rrssPalette1 js-border3 js-iconLinkedin"
+                        href="https://es.linkedin.com/in/<%= linkedin %>" target="_blank" rel="noreferrer"
+                        title="linkedin"><i class="icon fab fa-linkedin-in js-icon3" aria-hidden="true"></i></a></li>
+                <li class="card__rrss"><a class="card__rrss--item rrssPalette1 js-border4 js-iconGithub"
+                        href="https://github.com/<%= github %>" target="_blank" rel="noreferrer" title="github"><i
+                            class="icon fab fa-github-alt js-icon4" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
