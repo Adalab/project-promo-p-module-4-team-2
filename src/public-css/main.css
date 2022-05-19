@@ -14,13 +14,13 @@
   flex-direction: column;
   height: 457px;
   justify-content: center;
+  height: 100vh;
 }
 @media (min-width: 768px) {
   .container__preview {
     border-radius: 5px;
     grid-column: 2/3;
     grid-row: 1/4;
-    height: 100%;
   }
 }
 .container__preview .card {
@@ -115,6 +115,7 @@
   font-weight: 400;
   line-height: 20px;
 }
+
 .rrssPalette1 {
   border: 2px solid #a2deaf;
   border: 2px solid var(--hospital-green);

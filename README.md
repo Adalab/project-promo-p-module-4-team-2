@@ -10,86 +10,54 @@ En este proyecto vamos a trabajar con un caso muy típico que se suele producir 
 
 ### Objetivos:
 
-1. Lidiar con código heredado y ser capaces de refactorizarlo.
-2. Saber identificar y generar los componentes de una página, separarlos y crear componentes visualmente similares a partir de estos.
-3. Aprender a usar React para crear una aplicación web sencilla.
-4. Aprender a buscar información en la documentación de librerías externas.
-5. Implementar Scrum como marco de referencia para el desarrollo del producto, basándonos siempre en los valores de Agile como puntos clave del trabajo en equipo y la mejora continua.
-6. Mejorar la comunicación entre los miembros del equipo.
-7. Mejorar vuestras habilidades de comunicación en público al exponer el proyecto en la sesión final.
+1. Consolidar el aprendizaje de las tecnologías Node JS y Express JS para aprender a escuchar peticiones desde los navegadores.
+2. Consolidar el aprendizaje de SQL para trabajar con bases de datos y guardar los datos de las usuarias de forma persistente.
+3. Consolidar el aprendizaje de API Rest para saber cómo estructurar y organizar las comunicaciones entre un navegador y un servidor de forma óptima.
+4. Ser capaces de realizar un proyecto web completo, sin necesidad de solicitar ayuda a ningún otro equipo de desarrollo.
+5. Ser capaces de poner en producción un proyecto completo: front end + back end.
+6. Mejorar la comunicación entre los miembros del equipo y con otros equipos de desarrollo.
 
 ### Caso de uso:
 
-La idea fundamental de este proyecto es aprender a trabajar con un proyecto heredado. De esta forma desarrollamos nuestra capacidad de adaptarnos a proyectos ya existentes. Esto nos preparará para, de cara al futuro, entrar en equipos nuevos de desarrollo con mayor rapidez, mejorar nuestra capacidad de modificación de código creado por otras personas y concienciarnos de la importancia de crear buen código visto desde la otra parte, la persona que lo recibe.
+Con este servidor podréis demostrar que tenéis un perfil full stack (front end + back end) y que sois desarrolladoras versátiles capaces de trabajar en cualquier departamento técnico de una empresa de desarrollo.
 
 ### Especificaciones:
 
-Se partirá de un proyecto funcional (el generador de tarjetas interactivas), solo debemos heredar todo el Sass del proyecto, mantenerlo, evolucionarlo y refactorizarlo.
-
-> **_Refactorizar código_** consiste en modificar un código para mejorar su estructura pero sin añadir nuevas funcionalidades.
-
-- Uso de Sass para los estilos
-- Uso de mediaqueries para que el diseño sea adaptable al dispositivo
-- Desarrollo usando la estrategia mobile first
-- Uso de git para el control de versiones del proyecto, con ramas y pull-requests para revisar los cambios de las compañeras
-- Publicación del resultado en Internet usando GitHub Pages
-
-**La webapp deberá tener las siguientes nuevas características:**
-
-- Uso de React para la estructuración del JS de la aplicación
-- Deberá usar transiciones y/o animaciones para mejorar interacciones con la aplicación
-- Debe implementarse con una navegación entre distintas páginas de la aplicación usando React router
+En el módulo 3 hemos utilizado un servidor desarrollado por las profesoras de Adalab. Puesto que el objetivo de este proyecto es replicar la funcionalidad de dicho servidor, vamos a utilizarlo de guía para saber qué debemos desarrollar.
+Si analizamos qué comunicaciones se realizan entre la web y el servidor desarrollado por las profesoras de Adalab del proyecto Awesome profile cards podremos crear una nueva tarjeta a través del API, visualizar una tarjeta existente a través del motor de plantillas, usar un servidor de estáticos, usar un servidor de producción.
 
 ## Planificación del proyecto
 
-### Sprints
-
-- Para la realización de este proyecto trabajaremos en **2 sprints (2 iteraciones) de 5 sesiones cada uno.**
-
-* Al final del primer sprint haremos una demo corta de 5 minutos para presentar el resultado del trabajo al resto de las compañeras y a las profesoras. También haremos una retro corta revisando los working agreements que hemos acordado al inicio del proyecto.
-* Al final del segundo sprint (final del proyecto), haremos una demo de 5 minutos más preguntas, y una retrospectiva usando una dinámica similar a las usadas en los equipos de desarrollo que usan Scrum.
-
 ### Historias de usuario
 
-Para la gestión del proyecto, usaremos historias de usuario, que es una herramienta para definir las características de un producto. Usaremos las mismas historias de usuario que ya tenemos definidas del proyecto anterior.
+Para la gestión del proyecto, usaremos historias de usuario, que es una herramienta para definir las características de un producto que hemos visto en detalle durante el curso.
 
-### Planificación técnica
+#### Primera. API
 
-**Primer paso. Análisis del proyecto.**
+- Creación de un servidor básico.
+- Creación de un API Rest para poder crear tarjetas, guardándolas en un array del servidor.
 
-- En este proyecto usaremos 2 repos:
+#### Segunda. Servidor de estáticos
 
-1. El repo del proyecto que nos hayan asignado, donde trabajaremos en una rama para entender y mejorar el código heredado. Esto quiere decir que sí podemos modificar el repo antiguo, pero sin tocar la rama master.
-2. Un nuevo repo con el proyecto de React.
+- Creación de un servidor de estáticos para poder servir la página del módulo 3 desde el nuevo servidor.
 
-- Analizar y probar el código y entender su estructura para poder adaptarla a nuestras necesidades y conocimientos.
-- Solucionar errores detectados en el código.
+#### Tercera. Motor de plantillas
 
-**Segundo paso. Maquetación con React de la página de la herramienta**
+- Creación de un motor de plantillas para poder visualizar las tarjetas creadas.
 
-- Definir la estructura de componentes React de la aplicación.
-- Generar los componentes del proyecto y comunicar información mediante props.
+#### Cuarta. Bases de datos
 
-**Tercer paso. Versión completa con React**
-
-- Realizar la interactividad, usando el estado y los eventos de React.
-- Usar inputs de tipo file para la gestión de la foto de la tarjeta.
-- Implementar la comunicación con el backend, la función de compartir y offline.
-
-**Cuarto paso. Mejoras finales**
-
-- Crear la página de landing.
-- Implementar las rutas con React router.
-- Revisión del código y pruebas.
-- Podrán implementarse otras mejoras visuales si todo ya está terminado y acordado con el PO.
+- En la primera historia hemos guardado las tarjetas creadas en un array del servidor.
+- En esta historia debemos guardar las tarjetas en base de datos.
+- Cuando una usuaria visualice una tarjeta debemos recuperar esa información desde la base de datos para poder mostrarla.
 
 # 👀 Dónde se puede ver
 
-[Nuestro proyecto](http://beta.adalab.es/project-promo-p-module-3-team-2/)
+[Nuestro proyecto](https://team-hook.herokuapp.com/)
 
 # Guía para arrancar el proyecto
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit.
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este proyecto.
 
 **Pasos a seguir :**
 
@@ -104,7 +72,7 @@ npm install
 **Arrancar el proyecto con el comando**
 
 ```bash
-npm start
+npm run dev
 ```
 
 # Este proyecto ha sido desarrollado con:
@@ -114,7 +82,11 @@ npm start
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> 
 <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
-<a href="https://github.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt=“github” width="40" height="40"/> </a> 
+<a href="https://node.org/" target="_blank" rel="noreferrer"> <img src="https://midu.dev/images/tags/node.png" alt=node width="40" height="40"/> </a> 
+<a href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer"> <img src="https://secureanycloud.com/wp-content/uploads/sites/33/2016/10/38584.png" alt="sqlite" width="40" height="40"/> </a> 
+<a href="https://www.postman.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="postman" width="40" height="40"/> </a> 
+<a href="https://www.heroku.com/" target="_blank" rel="noreferrer"> <img src="https://hidden1.zentica-global.com/wp-content/uploads/2021/04/Deploiement-sur-Heroku-une-introduction.jpg" alt="heroku" width="40" height="40"/> </a> 
+<a href="https://github.com/Adalab/project-promo-p-module-4-team-2" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt=“github” width="40" height="40"/> </a> 
 </p>
 
 # Autoras:
