@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import defaultAvatar from "../../images/mariposa.jpg";
+import React from 'react';
+import PropTypes from 'prop-types';
+import defaultAvatar from '../../images/foto_card.png';
 
 function GetAvatar(props) {
   const fr = new FileReader();
@@ -9,36 +9,36 @@ function GetAvatar(props) {
   const uploadImage = (ev) => {
     if (ev.currentTarget.files.length > 0) {
       const myFile = ev.currentTarget.files[0];
-      fr.addEventListener("load", getImage);
+      fr.addEventListener('load', getImage);
       fr.readAsDataURL(myFile);
     }
   };
 
   const getImage = () => {
     const image = fr.result;
-    props.handleInputChange(image, "photo");
+    props.handleInputChange(image, 'photo');
   };
 
-  const photo = props.photo === "" ? defaultAvatar : props.photo;
+  const photo = props.photo === '' ? defaultAvatar : props.photo;
   return (
     <>
       <label
-        htmlFor="photo"
-        className="label secondFieldset__button js__profile-trigger"
+        htmlFor='photo'
+        className='label secondFieldset__button js__profile-trigger'
       >
         Añadir imagen
       </label>
       <input
-        id="photo"
-        type="file"
-        className="input js-input js__profile-upload-btn"
+        id='photo'
+        type='file'
+        className='input js-input js__profile-upload-btn'
         ref={myFileField}
         onChange={uploadImage}
       />
 
       <div
-        type="text"
-        className="square js__profile-preview"
+        type='text'
+        className='square js__profile-preview'
         style={{ backgroundImage: `url(${photo})` }}
       ></div>
     </>

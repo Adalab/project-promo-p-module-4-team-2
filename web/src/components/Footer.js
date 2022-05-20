@@ -8,8 +8,8 @@ function Footer(props) {
         <img
           className='footer__logo'
           src={props.src}
-          alt='Logo Ninfas'
-          title='Logo Equipo Ninfas'
+          alt='Logo Hook'
+          title='Logo Team Hook'
         />
       </a>
     </footer>
