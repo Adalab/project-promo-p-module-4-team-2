@@ -58,7 +58,7 @@ server.post("/card", (req, res) => {
 
     const responseSucess = {
       success: true,
-      cardURL: `https://team-hook.herokuapp.com/cards/${newCard.id}`,
+      cardURL: `http://team-hook.herokuapp.com/cards/${newCard.id}`,
     };
     res.json(responseSucess);
   } else {

@@ -1,5 +1,5 @@
 const dataApi = (data) => {
-  return fetch("https://team-hook.herokuapp.com/cards", {
+  return fetch("http://team-hook.herokuapp.com/cards", {
     method: "POST",
     body: JSON.stringify(data),
     headers: { "Content-Type": "application/json" },
