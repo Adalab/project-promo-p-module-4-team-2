@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.151d4d79.css",
-    "main.js": "./static/js/main.f2f86fcd.js",
+    "main.css": "./static/css/main.0c2b0050.css",
+    "main.js": "./static/js/main.5659207e.js",
+    "static/media/fondo.jpg": "./static/media/fondo.308f2d67a499977a7a44.jpg",
+    "static/media/foto_card.png": "./static/media/foto_card.e1b1abaf86b1f30f68f6.png",
     "static/media/awesome.svg": "./static/media/awesome.a65df2b29ae175808f920215242d8683.svg",
-    "static/media/mariposa.jpg": "./static/media/mariposa.3ca10046bdbf232f6183.jpg",
+    "static/media/logo_hook.jpg": "./static/media/logo_hook.969574d88c032bb96a23.jpg",
     "static/media/keyboard-solid.svg": "./static/media/keyboard-solid.7f279dd41a28c02487d877f048ec389b.svg",
     "static/media/object-ungroup-solid.svg": "./static/media/object-ungroup-solid.4d3937122342884fa021c8fb9853bf27.svg",
     "static/media/share-nodes-solid.svg": "./static/media/share-nodes-solid.02f796f687f04ce77804eda64e95f751.svg",
     "index.html": "./index.html",
-    "main.151d4d79.css.map": "./static/css/main.151d4d79.css.map",
-    "main.f2f86fcd.js.map": "./static/js/main.f2f86fcd.js.map"
+    "main.0c2b0050.css.map": "./static/css/main.0c2b0050.css.map",
+    "main.5659207e.js.map": "./static/js/main.5659207e.js.map"
   },
   "entrypoints": [
-    "static/css/main.151d4d79.css",
-    "static/js/main.f2f86fcd.js"
+    "static/css/main.0c2b0050.css",
+    "static/js/main.5659207e.js"
   ]
 }
