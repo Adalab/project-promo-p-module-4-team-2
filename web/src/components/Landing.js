@@ -1,5 +1,5 @@
 import '../styles/layout/landing/_main.scss';
-import logo from '../images/logo_ninfas.png';
+import logo from '../images/logo_hook.jpg';
 import logoAwesome from '../images/awesome.svg';
 import iconDesign from '../images/object-ungroup-solid.svg';
 import iconKeyboard from '../images/keyboard-solid.svg';
