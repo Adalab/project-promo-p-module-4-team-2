@@ -53,7 +53,7 @@ Para la gestión del proyecto, usaremos historias de usuario, que es una herrami
 
 # 👀 Dónde se puede ver
 
-[Nuestro proyecto](https://team-hook.herokuapp.com/)
+[Nuestro proyecto](https://hook-team.herokuapp.com/)
 
 # Guía para arrancar el proyecto
 
